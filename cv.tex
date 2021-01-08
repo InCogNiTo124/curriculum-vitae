@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Wenneker Resume/CV
+% LaTeX Template
+% Version 1.1 (19/6/2016)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,12pt]{memoir} % Font and paper size
+
+\input{structure.tex} % Include the file specifying document layout and packages
+
+% Lato font
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+
+% href
+\usepackage{hyperref}
+
+% justify
+\usepackage{ragged2e}
+
+% image with rounded corners
+\usepackage{tikz}
+\usepackage{graphicx}
+
+% \Letter and \fa*
+\usepackage[misc]{ifsym}
+\usepackage{fontawesome}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION 
+%----------------------------------------------------------------------------------------
+\newcommand{\size}{4.75}
+\userinformation{ % Set the content that goes into the sidebar of each page
+\begin{flushleft}
+% Comment out this figure block if you don't want a photo
+
+\begin{tikzpicture} 
+        \clip [rounded corners=0.2cm] (0,0) rectangle coordinate (centerpoint) (\size,\size cm);
+        \node [inner sep=0pt] at (centerpoint){\includegraphics[width=\size cm]{marijansmetko-square.png}}; % Your photo
+\end{tikzpicture}
+\\
+\small % Smaller font size
+%Marijan Smetko \\ % Your name
+%\url{} \\ % Your email address
+{\small%footnotesize
+\href{https://msmetko.xyz}{\faHome \space msmetko.xyz} \\ % Your URL
+\href{https://gitlab.com/msmetko}{\faGitlab \space gitlab/msmetko} \\
+\href{https://github.com/InCogNiTo124}{\faGithub \space github/InCogNiTo124} \\
+\href{https://www.linkedin.com/in/marijan-smetko}{\faLinkedin \space linkedin/marijan-smetko}\\
+\href{mailto:msmetko@pm.me}{\faEnvelopeO \space msmetko@pm.me}\\
+\faPhone \space +385 92 165 09 54\\
+}
+%(+385) 92-165-09-54 \\ % Your phone number
+\Sep % Some whitespace
+\faMapMarker \space Zagreb, Croatia\\
+\end{flushleft}
+\Sep
+\raggedright \textbf{About me:} \\
+\justifying {\small
+Marijan Smetko, 24, student of FER, University of Zagreb, Croatia.\\
+My primary interests are \linebreak machine (and deep) learning and computer vision. Other interests include: physics, \linebreak math (especially statistics), \linebreak chemistry, chaos theory, and quantum computing. \\I'm also deeply married to the idea of computers as tools for automating redundant tasks, so I write a lot of Python and bash scripts.}
+\vfill % Whitespace under this block to push it up under the photo
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\userinformation % Print your information in the left column
+
+\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	HEADING
+%----------------------------------------------------------------------------------------
+
+\cvheading{Marijan Smetko} % Large heading - your name
+
+\cvsubheading{Computer Science student\\
+{\small Faculty of Electrical Engineering and Computing (FER), University of Zagreb}} % Subheading - your occupation/specialization
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\CVSection{Experience}
+
+%------------------------------------------------
+
+\CVItem{July 2020 - present, \textit{Computer vision intern}, RealNetworks}{
+    \begin{itemize}
+    	\myitem Developed a SOTA pipeline for computer vision model quantization for Google Coral TPU devices
+        \myitem Exploring Huawei Atlas 800 TPU server
+    \end{itemize}
+}
+%------------------------------------------------
+
+\CVItem{Apr 2018 - Sep 2019, \textit{Machine learning intern}, Styria.AI}{
+    \begin{itemize}
+        \myitem Designed and implemented a request authorization service
+        \myitem Designed and implemented a visual similarity model demo GUI 
+        \myitem Researched production model serving options for PyTorch
+        \myitem Statistical analysis of various deployed models
+    \end{itemize}
+}
+
+\CVItem{Sep 2018 - Feb 2019, \textit{Team leader}, FER}{
+    \begin{itemize}
+        \myitem Managed a team of 6 students for \textit{Software design} class project
+        \myitem SPA for recipe creation and sharing, with recipes as DAGs
+        \myitem Responsibilities: backend, deployment, and student coordination
+    \end{itemize}
+}
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\CVSection{Education}
+
+%------------------------------------------------
+
+\CVItem{2016 - 2019, BSc in Computer Science, FER}{
+\begin{itemize}
+    \myitem Thesis: \textit{Visualization of class activation maps for image classification}
+    \myitem Relevant courses: \textit{Artificial intelligence}, \textit{Software design}, \textit{OOP in Java}, \textit{Design patterns}, \textit{Statistical data analysis}
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\CVItem{2019 - 2021, MSc in Computer Science, FER}{
+\begin{itemize}
+    \myitem Thesis: \textit{TBD}
+    \myitem Relevant courses: \textit{Computer vision}, \textit{Machine learning}, \textit{Deep learning}, \textit{Competitive programming}, \textit{Digital image processing and analysis}
+\end{itemize}
+}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+%\CVSection{Communication Skills}
+
+%------------------------------------------------
+
+%\CVItem{2015, \textit{Oral Presentation}, California Business Conference}{Presented research I conducted for my Masters of Engineering degree.}
+
+%------------------------------------------------
+
+%\CVItem{2014, \textit{Poster}, Annual Business Conference (Oregon)}{As part of the course work for BUS320, I created a poster analyzing several local businesses and presented this at a conference.}
+
+%------------------------------------------------
+
+%\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Software Development Skills}
+
+%------------------------------------------------
+
+%\CVItem{}%Tools I'm familiar with:}
+%{
+%\medskip
+\begin{tabular}{p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth}}
+\mybullet Python3 &  \mybullet bash & \mybullet Linux & \mybullet git\\
+\mybullet C & \mybullet C++ &  \mybullet Java & \mybullet SQL\\
+\mybullet NumPy & \mybullet PyTorch & \mybullet SciPy & \mybullet scikit-learn\\
+\mybullet pandas & \mybullet Docker & \mybullet Gitlab CI\\
+\end{tabular}
+%}
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	NEW PAGE DELIMITER
+%	Place this block wherever you would like the content of your CV to go onto the next page
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\userinformation % Print your information in the left column
+
+%\framebreak % End of the first column
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Achievements}
+
+%------------------------------------------------
+
+\CVItem{2016, \textit{Matura exam}}{Achieved 100\% in Math and Information Science, and 98\% in Physics}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS
+%----------------------------------------------------------------------------------------
+
+\CVSection{Interests}
+
+%------------------------------------------------
+
+\CVItem{Professional}{Data analysis, Computer vision, Machine learning, DevOps, Team leading, Project managing}
+
+%------------------------------------------------
+
+\CVItem{Personal}{Piano, Math, Physics, Chemistry, Chaos theory, Quantum computing, Stock market investing}
+
+%------------------------------------------------
+
+\Sep % Extra whitespace after the end of a major section
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
