@@ -94,3 +94,14 @@
 
 \newcommand{\mybullet}{\textcolor{\mycolor}{$\circ$}~~} % New command for the blue bullets
 \newcommand{\myitem}[1]{\item[\textcolor{\mycolor}{\textbullet}] #1}
+
+\newcommand{\maxwidth}{5}
+\newcommand\skills[1]{ 
+    \begin{tikzpicture}
+        \foreach [count=\i] \x/\y in {#1}{
+            \draw[\mycolor, thin] (0,\i*1.1) rectangle (\maxwidth,\i*1.1+0.4);
+            \draw[fill=\mycolor,\mycolor](0,\i*1.1) rectangle (\y,\i*1.1+0.4);
+            \node[above right] at (0,\i*1.1+0.35) {\small \textbf{\x}};
+        }
+    \end{tikzpicture}
+}

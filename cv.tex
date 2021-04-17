@@ -36,15 +36,18 @@
 % image with rounded corners
 \usepackage{tikz}
 \usepackage{graphicx}
+\usepackage{xcolor}
 
 % \Letter and \fa*
 \usepackage[misc]{ifsym}
 \usepackage{fontawesome}
+\RequirePackage[absolute,overlay]{textpos}
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION 
 %----------------------------------------------------------------------------------------
 \newcommand{\size}{4.75}
+
 \userinformation{ % Set the content that goes into the sidebar of each page
 \begin{flushleft}
 % Comment out this figure block if you don't want a photo
@@ -62,7 +65,7 @@
 \href{https://gitlab.com/msmetko}{\faGitlab \space gitlab/msmetko} \\
 \href{https://github.com/InCogNiTo124}{\faGithub \space github/InCogNiTo124} \\
 \href{https://www.linkedin.com/in/marijan-smetko}{\faLinkedin \space linkedin/marijan-smetko}\\
-\href{mailto:marijan@msmetko.xyz}{\faEnvelopeO \space marijan@msmetko.xyz}\\
+\href{mailto:msmetko@msmetko.xyz}{\faEnvelopeO \space msmetko@msmetko.xyz}\\
 \faPhone \space +385 92 165 09 54\\
 }
 %(+385) 92-165-09-54 \\ % Your phone number
@@ -74,6 +77,10 @@
 \justifying {\small
 Marijan Smetko, 24, student of FER, University of Zagreb, Croatia.\\
 My primary interests are \linebreak machine (and deep) learning and computer vision. Other interests include: physics, \linebreak math (especially statistics), \linebreak chemistry, chaos theory, and quantum computing. \\I'm also deeply married to the idea of computers as tools for automating redundant tasks, so I write a lot of Python and bash scripts.}
+\\
+\\
+
+\skills{{Web development/2}, {Java/2}, {C\slash C++/3}, {DevOps/3}, {ML\slash DL \& Data analysis/3.5}, {Linux/4.5}, {Python/4.9}}
 \vfill % Whitespace under this block to push it up under the photo
 }
 
@@ -105,7 +112,8 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 \CVItem{July 2020 - present, \textit{Computer vision intern}, RealNetworks}{
     \begin{itemize}
     	\myitem Developed a SOTA pipeline for computer vision model quantization for Google Coral TPU devices
-        \myitem Exploring Huawei Atlas 800 TPU server
+        \myitem Explored Huawei Atlas 800 TPU server
+        \myitem Collected dataset and trained a model for face anti-spoofing
     \end{itemize}
 }
 %------------------------------------------------
@@ -152,14 +160,14 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 
 \CVItem{2019 - 2021, MSc in Computer Science, FER}{
 \begin{itemize}
-    \myitem Thesis: \textit{TBD}
+    \myitem Thesis: \textit{Incremental open-set recognition for semantic segmentation}
     \myitem Relevant courses: \textit{Computer vision}, \textit{Machine learning}, \textit{Deep learning}, \textit{Competitive programming}, \textit{Digital image processing and analysis}
 \end{itemize}
 }
 
 %------------------------------------------------
 
-\Sep % Extra whitespace after the end of a major section
+%\Sep % Extra whitespace after the end of a major section
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS
@@ -183,19 +191,19 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 %	SKILLS
 %----------------------------------------------------------------------------------------
 
-\CVSection{Software Development Skills}
+%\CVSection{Software Development Skills}
 
 %------------------------------------------------
 
 %\CVItem{}%Tools I'm familiar with:}
 %{
 %\medskip
-\begin{tabular}{p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth}}
-\mybullet Python3 &  \mybullet bash & \mybullet Linux & \mybullet git\\
-\mybullet C & \mybullet C++ &  \mybullet Java & \mybullet SQL\\
-\mybullet NumPy & \mybullet PyTorch & \mybullet SciPy & \mybullet scikit-learn\\
-\mybullet pandas & \mybullet Docker & \mybullet Gitlab CI\\
-\end{tabular}
+%\begin{tabular}{p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth} p{0.15\textwidth}}
+%\mybullet Python3 &  \mybullet bash & \mybullet Linux & \mybullet git\\
+%\mybullet C & \mybullet C++ &  \mybullet Docker & \mybullet SQL\\
+%\mybullet NumPy & \mybullet PyTorch & \mybullet SciPy & \mybullet scikit-learn\\
+%\mybullet pandas &  \mybullet Gitlab CI\\
+%\end{tabular}
 %}
 %------------------------------------------------
 
@@ -221,6 +229,10 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 %------------------------------------------------
 
 \CVItem{2016, \textit{Matura exam}}{Achieved 100\% in Math and Information Science, and 98\% in Physics}
+
+\CVItem{2021, \textit{Google Foobar}}{Got an invitation to a secret Google programming challenges}
+
+\CVItem{2021, \textit{ILPC}}{Held online 6-week long Python course for students of FER}
 
 %------------------------------------------------
 
