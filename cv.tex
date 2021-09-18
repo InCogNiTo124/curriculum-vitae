@@ -7,7 +7,7 @@
 % http://www.LaTeXTemplates.com
 %
 % Original author:
-% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
 % Vel (vel@LaTeXTemplates.com)
 %
 % License:
@@ -44,7 +44,7 @@
 \RequirePackage[absolute,overlay]{textpos}
 
 %----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION 
+%	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 \newcommand{\size}{4.75}
 
@@ -52,7 +52,7 @@
 \begin{flushleft}
 % Comment out this figure block if you don't want a photo
 
-\begin{tikzpicture} 
+\begin{tikzpicture}
         \clip [rounded corners=0.2cm] (0,0) rectangle coordinate (centerpoint) (\size,\size cm);
         \node [inner sep=0pt] at (centerpoint){\includegraphics[width=\size cm]{marijansmetko-square.png}}; % Your photo
 \end{tikzpicture}
@@ -66,7 +66,7 @@
 \href{https://github.com/InCogNiTo124}{\faGithub \space github/InCogNiTo124} \\
 \href{https://www.linkedin.com/in/marijan-smetko}{\faLinkedin \space linkedin/marijan-smetko}\\
 \href{mailto:msmetko@msmetko.xyz}{\faEnvelopeO \space msmetko@msmetko.xyz}\\
-\faPhone \space +385 92 165 09 54\\
+%\faPhone \space +385 92 165 09 54\\
 }
 %(+385) 92-165-09-54 \\ % Your phone number
 \Sep % Some whitespace
@@ -98,8 +98,8 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 
 \cvheading{Marijan Smetko} % Large heading - your name
 
-\cvsubheading{Computer Vision Engineer Intern\\
-{\small Faculty of Electrical Engineering and Computing (FER), University of Zagreb}} % Subheading - your occupation/specialization
+\cvsubheading{AI and Computer Vision Engineer\\
+{\small \href{https://www.fer.unizg.hr/}{Faculty of Electrical Engineering and Computing (FER)}, \href{http://www.unizg.hr/}{University of Zagreb}}} % Subheading - your occupation/specialization
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
@@ -108,21 +108,24 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 \CVSection{Experience}
 
 %------------------------------------------------
-
-\CVItem{July 2020 - present, \textit{Computer vision intern}, RealNetworks}{
+\CVItem{July 2021 - present, \href{https://photomath.com/}{\textit{Junior AI Engineer} @ Photomath}}{
     \begin{itemize}
-    	\myitem Developed a SOTA pipeline for computer vision model quantization for Google Coral TPU devices
-        \myitem Explored Huawei Atlas 800 TPU server
+        \myitem Implemented model explainability and visualization tool
+        \myitem Extensive model design \& performance testing and evaluation
+    \end{itemize}
+}
+
+\CVItem{July 2020 - July 2021, \href{https://realnetworks.com/}{\textit{Computer vision intern} @ RealNetworks}}{
+    \begin{itemize}
+    	\myitem SOTA pipeline for model quantization for Google Coral TPU devices
+        %\myitem Explored Huawei Atlas 800 TPU server
         \myitem Collected dataset and trained a model for face anti-spoofing
     \end{itemize}
 }
-%------------------------------------------------
 
-\CVItem{Apr 2018 - Sep 2019, \textit{Machine learning intern}, Styria.AI}{
+\CVItem{Apr 2018 - Sep 2019, \href{https://web.archive.org/web/20210306143804/https://www.styria.ai/}{\textit{Machine learning intern} @ Styria.AI}}{
     \begin{itemize}
-        \myitem Designed and implemented a request authorization service
-        \myitem Designed and implemented a visual similarity model demo GUI 
-        \myitem Researched production model serving options for PyTorch
+        \myitem Designed and implemented internal tools: request authorization service and a visual similarity model demo
         \myitem Statistical analysis of various deployed models
         \begin{itemize}
             \myitem Improved performance by more than 10 points
@@ -130,7 +133,7 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
     \end{itemize}
 }
 
-\CVItem{Sep 2018 - Feb 2019, \textit{Team leader}, FER}{
+\CVItem{Sep 2018 - Feb 2019, \textit{Team leader} @ FER}{
     \begin{itemize}
         \myitem Managed a team of 6 students for \textit{Software design} class project
         \myitem SPA for recipe creation and sharing, with recipes as DAGs
@@ -151,8 +154,14 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 
 \CVItem{2016 - 2019, BSc in Computer Science, FER}{
 \begin{itemize}
-    \myitem Thesis: \textit{Visualization of class activation maps for image classification}
-    \myitem Relevant courses: \textit{Artificial intelligence}, \textit{Software design}, \textit{OOP in Java}, \textit{Design patterns}, \textit{Statistical data analysis}
+    \myitem Thesis: \href{http://www.zemris.fer.hr/~ssegvic/project/pubs/smetko19bs.pdf}{\textit{Visualization of class activation maps for image classification}}
+    \myitem Relevant courses:
+    \href{https://www.fer.unizg.hr/en/course/itai}{\textit{Artificial intelligence}},
+    \href{https://www.fer.unizg.hr/en/course/sofdes}{\textit{Software design}},
+    \href{https://www.fer.unizg.hr/en/course/oop_b}{\textit{OOP in Java}},
+    \href{https://www.fer.unizg.hr/en/course/despat}{\textit{Design patterns}},
+    \href{https://www.fer.unizg.hr/en/course/sda_b}{\textit{Statistical data analysis}}
+
 \end{itemize}
 }
 
@@ -160,8 +169,12 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 
 \CVItem{2019 - 2021, MSc in Computer Science, FER}{
 \begin{itemize}
-    \myitem Thesis: \textit{Incremental open-set recognition for semantic segmentation}
-    \myitem Relevant courses: \textit{Computer vision}, \textit{Machine learning}, \textit{Deep learning}, \textit{Competitive programming}, \textit{Digital image processing and analysis}
+    \myitem Thesis: \href{http://www.zemris.fer.hr/~ssegvic/project/pubs/smetko21ms.pdf}{\textit{Incremental open-set recognition for semantic segmentation}}
+    \myitem Relevant courses: \href{https://www.fer.unizg.hr/en/course/comvis}{\textit{Computer vision}},
+    \href{https://www.fer.unizg.hr/en/course/su}{\textit{Machine learning}},
+    \href{https://www.fer.unizg.hr/en/course/deelea}{\textit{Deep learning}},
+    \href{https://www.fer.unizg.hr/en/course/compro}{\textit{Competitive programming}},
+    \href{https://www.fer.unizg.hr/en/course/dipaa}{\textit{Digital image processing and analysis}}
 \end{itemize}
 }
 
