@@ -7,7 +7,7 @@
 % http://www.LaTeXTemplates.com
 %
 % Original author:
-% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by 
 % Vel (vel@LaTeXTemplates.com)
 %
 % License:
@@ -44,7 +44,7 @@
 \RequirePackage[absolute,overlay]{textpos}
 
 %----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION
+%	NAME AND CONTACT INFORMATION 
 %----------------------------------------------------------------------------------------
 \newcommand{\size}{4.75}
 
@@ -52,9 +52,9 @@
 \begin{flushleft}
 % Comment out this figure block if you don't want a photo
 
-\begin{tikzpicture}
+\begin{tikzpicture} 
         \clip [rounded corners=0.2cm] (0,0) rectangle coordinate (centerpoint) (\size,\size cm);
-        \node [inner sep=0pt] at (centerpoint){\includegraphics[width=\size cm]{marijansmetko-square.png}}; % Your photo
+        \node [inner sep=0pt] at (centerpoint){\includegraphics[width=\size cm]{5M7A3949-square.jpg}}; % Your photo
 \end{tikzpicture}
 \\
 \small % Smaller font size
@@ -66,6 +66,7 @@
 \href{https://github.com/InCogNiTo124}{\faGithub \space github/InCogNiTo124} \\
 \href{https://www.linkedin.com/in/marijan-smetko}{\faLinkedin \space linkedin/marijan-smetko}\\
 \href{mailto:msmetko@msmetko.xyz}{\faEnvelopeO \space msmetko@msmetko.xyz}\\
+\href{https://terra.incognita}{\faPencilSquareO terra.incognita}\\
 %\faPhone \space +385 92 165 09 54\\
 }
 %(+385) 92-165-09-54 \\ % Your phone number
@@ -75,19 +76,18 @@
 \Sep
 \raggedright \textbf{About me:} \\
 \justifying {\small
-Marijan Smetko, 24, student of FER, University of Zagreb, Croatia.\\
 My primary interests are \linebreak machine (and deep) learning and computer vision. Other interests include: physics, \linebreak math (especially statistics), \linebreak chemistry, chaos theory, and quantum computing. \\I'm also deeply married to the idea of computers as tools for automating redundant tasks, so I write a lot of Python and bash scripts.}
 \\
 \\
+\textbf{\textit{Techs I like to work with:}}\\
 
-\skills{{Web development/2}, {Java/2}, {C\slash C++/3}, {DevOps/3}, {ML\slash DL \& Data analysis/3.5}, {Linux/4.5}, {Python/4.9}}
+\skills{{Web development/1}, {Java/2}, {C\slash C++/3}, {ML\slash DL \& Data analysis/3.5}, {Rust/4}, {Automatization/4.5}, {Linux/4.5}, {Python/4.9}}
 \vfill % Whitespace under this block to push it up under the photo
 }
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 \userinformation % Print your information in the left column
 
 \framebreak % End of the first column
@@ -98,8 +98,8 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 
 \cvheading{Marijan Smetko} % Large heading - your name
 
-\cvsubheading{AI and Computer Vision Engineer\\
-{\small \href{https://www.fer.unizg.hr/}{Faculty of Electrical Engineering and Computing (FER)}, \href{http://www.unizg.hr/}{University of Zagreb}}} % Subheading - your occupation/specialization
+\cvsubheading{Systems Development Engineer @ \href{https://google.com}{Google}}
+% {\small \href{https://www.fer.unizg.hr/}{Faculty of Electrical Engineering and Computing (FER)}, \href{http://www.unizg.hr/}{University of Zagreb}}} % Subheading - your occupation/specialization
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
@@ -108,10 +108,18 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 \CVSection{Experience}
 
 %------------------------------------------------
-\CVItem{July 2021 - present, \href{https://photomath.com/}{\textit{Junior AI Engineer} @ Photomath}}{
+\CVItem{July 2023 - present, \href{https://google.com}{\textit{Systems Development Engineer @ Google}}}{
+   \begin{itemize}
+        \myitem Preparations and deployments of Math Explanation Generative LLM
+    \end{itemize}
+}
+
+\CVItem{July 2021 - July 2023, \href{https://photomath.com/}{\textit{Junior AI Engineer} @ Photomath (aq. by Google)}}{
     \begin{itemize}
         \myitem Implemented model explainability and visualization tool
         \myitem Extensive model design \& performance testing and evaluation
+        % \myitem Handling of on-premise machines using \href{https://www.ansible.com}{Ansible} and \href{https://www.netdata.cloud}{Netdata}
+        \myitem Implemented an internal platform for machine learning experiments
     \end{itemize}
 }
 
@@ -133,12 +141,11 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
     \end{itemize}
 }
 
-\CVItem{Sep 2018 - Feb 2019, \textit{Team leader} @ FER}{
-    \begin{itemize}
-        \myitem Managed a team of 6 students for \textit{Software design} class project
-        \myitem SPA for recipe creation and sharing, with recipes as DAGs
-        \myitem Responsibilities: backend, deployment, and student coordination
-    \end{itemize}
+\CVItem{Sep 2016 - Feb 2021, \textit{Student projects @ FER}}{
+   \begin{itemize}
+       \myitem SPA for recipe creation and sharing, with recipes as \href{https://en.wikipedia.org/wiki/Directed_acyclic_graph}{\textit{DAGs}}
+       \myitem Compiler for subset of C, for a custom hardware
+   \end{itemize}
 }
 %------------------------------------------------
 
@@ -149,6 +156,17 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 %----------------------------------------------------------------------------------------
 
 \CVSection{Education}
+
+\CVItem{2019 - 2021, MSc in Computer Science, FER}{
+\begin{itemize}
+    \myitem Thesis: \href{http://www.zemris.fer.hr/~ssegvic/project/pubs/smetko21ms.pdf}{\textit{Incremental open-set recognition for semantic segmentation}}
+    \myitem Relevant courses: \href{https://www.fer.unizg.hr/en/course/comvis}{\textit{Computer vision}},
+    \href{https://www.fer.unizg.hr/en/course/su}{\textit{Machine learning}},
+    \href{https://www.fer.unizg.hr/en/course/deelea}{\textit{Deep learning}},
+    \href{https://www.fer.unizg.hr/en/course/compro}{\textit{Competitive programming}},
+    \href{https://www.fer.unizg.hr/en/course/dipaa}{\textit{Digital image processing and analysis}}
+\end{itemize}
+}
 
 %------------------------------------------------
 
@@ -161,22 +179,13 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
     \href{https://www.fer.unizg.hr/en/course/oop_b}{\textit{OOP in Java}},
     \href{https://www.fer.unizg.hr/en/course/despat}{\textit{Design patterns}},
     \href{https://www.fer.unizg.hr/en/course/sda_b}{\textit{Statistical data analysis}}
-
+    
 \end{itemize}
 }
 
 %------------------------------------------------
 
-\CVItem{2019 - 2021, MSc in Computer Science, FER}{
-\begin{itemize}
-    \myitem Thesis: \href{http://www.zemris.fer.hr/~ssegvic/project/pubs/smetko21ms.pdf}{\textit{Incremental open-set recognition for semantic segmentation}}
-    \myitem Relevant courses: \href{https://www.fer.unizg.hr/en/course/comvis}{\textit{Computer vision}},
-    \href{https://www.fer.unizg.hr/en/course/su}{\textit{Machine learning}},
-    \href{https://www.fer.unizg.hr/en/course/deelea}{\textit{Deep learning}},
-    \href{https://www.fer.unizg.hr/en/course/compro}{\textit{Competitive programming}},
-    \href{https://www.fer.unizg.hr/en/course/dipaa}{\textit{Digital image processing and analysis}}
-\end{itemize}
-}
+
 
 %------------------------------------------------
 
@@ -243,9 +252,9 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 
 \CVItem{2016, \textit{Matura exam}}{Achieved 100\% in Math and Information Science, and 98\% in Physics}
 
-\CVItem{2021, \textit{Google Foobar}}{Got an invitation to a secret Google programming challenges}
+\CVItem{2021, \href{https://foobar.withgoogle.com/}{\textit{Google Foobar}}}{Google's secret programming suite. Solved it \textit{twice}.}
 
-\CVItem{2021, \textit{ILPC}}{Held online 6-week long Python course for students of FER}
+\CVItem{2021, \href{https://www.youtube.com/playlist?list=PLbmXhS9PjDWsd5mhBvnQ5wG-BxHvKwtsk}{\textit{ILPC}}}{Held online 6-week long Python course for students of FER}
 
 %------------------------------------------------
 
@@ -259,11 +268,11 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 
 %------------------------------------------------
 
-\CVItem{Professional}{Data analysis, Computer vision, Machine learning, DevOps, Team leading, Project managing}
+\CVItem{Professional}{Data analysis, Computer vision, Machine learning, DevOps, Compilers}
 
 %------------------------------------------------
 
-\CVItem{Personal}{Piano, Math, Physics, Chemistry, Chaos theory, Quantum computing, Stock market investing}
+\CVItem{Personal}{Piano, Accordion, Math, Physics, Chemistry, Chaos theory, Finances, Quantum computing}
 
 %------------------------------------------------
 
@@ -272,3 +281,4 @@ My primary interests are \linebreak machine (and deep) learning and computer vis
 %----------------------------------------------------------------------------------------
 
 \end{document}
+
